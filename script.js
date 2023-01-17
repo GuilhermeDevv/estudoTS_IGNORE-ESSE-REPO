@@ -63,3 +63,10 @@ const pessoa = { nome: "GUILHERME", idade: 17 };
 
 */
 function freeShow(obj) { }
+/*
+parece uma subistituição de tipos do interface mas não, é uma implementação, veja APERTANDO O CTRL + SPACE dentro do objeto a seguir
+*/
+const dado = {
+    nome: "GL",
+    idade: 17,
+};

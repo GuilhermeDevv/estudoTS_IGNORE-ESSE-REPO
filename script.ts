@@ -95,3 +95,27 @@ const pessoa: TIPO_PESSOA = { nome: "GUILHERME", idade: 17 };
 */
 
 function freeShow(obj: TIPO_PESSOA) {}
+
+// 9 - diferença entre Interfaces & type alis
+
+/*
+        interface pode se alterada ao longo do codigo, ja o alis não.
+        se quiser criar um objeto use a interface, se quiser alterar algum tipo use a interface, veja a seguir.
+*/
+
+interface PESSOA {
+  nome: string;
+  sobrenome?: string;
+  idade: number | string;
+}
+interface PESSOA {
+  cpf?: number | string;
+}
+/*
+parece uma subistituição de tipos do interface mas não, é uma implementação, veja APERTANDO O CTRL + SPACE dentro do objeto a seguir  
+*/
+
+const dado: PESSOA = {
+  nome: "GL",
+  idade: 17,
+};
