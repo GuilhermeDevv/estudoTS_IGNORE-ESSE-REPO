@@ -119,3 +119,17 @@ const dado: PESSOA = {
   nome: "GL",
   idade: 17,
 };
+const dadoTWO: PESSOA = {
+  nome: "GL",
+  idade: 17,
+  cpf: "123.456.789-10",
+};
+
+function usoDoIn(pessoa: PESSOA): boolean {
+  if ("cpf" in pessoa) {
+    return true;
+  }
+  return false;
+}
+console.log(usoDoIn(dadoTWO));
+console.log(usoDoIn(dado));
