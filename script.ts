@@ -54,3 +54,15 @@ function gritarNome(nome: string, sobrenome?: string): string {
   }
   return `olá ${nome.toUpperCase()}`;
 }
+
+// 7 - Union types
+/*
+        serve para defenir multiplos tipos, veja a seguir.
+*/
+
+function formatarDinheiro(valor: string | number) {
+  console.log(`seu saldo é de R$ ${valor}`);
+}
+formatarDinheiro(1000);
+formatarDinheiro("3000");
+
