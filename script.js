@@ -24,3 +24,10 @@ function subtracao(a, b) {
 function passarCordenadas(cord) { }
 /*ou*/
 function passarCordenadasTwo(cord) { }
+// 5 - propriedades opcionas
+/*
+        veja a seguir que a propriedade nome é opcional, o uso do '?' define
+        que a parametro "sobrenome" é opcinal, ou seja, não é necessario a função
+        receber esse parametro.
+*/
+function nomeUser(nome, sobrenome) { }
