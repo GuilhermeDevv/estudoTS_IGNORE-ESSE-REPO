@@ -26,4 +26,9 @@ function subtracao(a: number, b: number): number {
   return a - b;
 }
 
+// 4 - objetos
+
+function passarCordenadas(cord: number[]) {}
+/*ou*/
+function passarCordenadasTwo(cord: { x: number; y: number }) {}
 
