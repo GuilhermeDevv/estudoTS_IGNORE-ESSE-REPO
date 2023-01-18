@@ -52,3 +52,9 @@ function formatarDinheiro(valor) {
 }
 formatarDinheiro(1000);
 formatarDinheiro("3000");
+function monstrarId(id) {
+    return `o seu id é ${id}`;
+}
+/*
+    o type alis é uma forma agradavel de setar tipo de um dado
+*/

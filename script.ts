@@ -66,3 +66,16 @@ function formatarDinheiro(valor: string | number) {
 formatarDinheiro(1000);
 formatarDinheiro("3000");
 
+// 8 - type alias
+
+type ID = string | number;
+
+function monstrarId(id: ID): string {
+  return `o seu id é ${id}`;
+}
+
+/*
+    o type alis é uma forma agradavel de setar tipo de um dado
+*/
+
+
