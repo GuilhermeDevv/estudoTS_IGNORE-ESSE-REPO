@@ -55,6 +55,11 @@ formatarDinheiro("3000");
 function monstrarId(id) {
     return `o seu id é ${id}`;
 }
+const pessoa = { nome: "GUILHERME", idade: 17 };
 /*
-    o type alis é uma forma agradavel de setar tipo de um dado
+        uma interface é uma forma de garantir que um objeto possui certos atributos e métodos.
+        Ela define uma estrutura que um objeto deve seguir, mas não fornece a implementação dos métodos.
+        Isso permite que você garanta a compatibilidade de tipos entre diferentes objetos e também facilita a criação de classes que implementam essa interface.
+
 */
+function freeShow(obj) { }
