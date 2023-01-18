@@ -31,3 +31,15 @@ function passarCordenadasTwo(cord) { }
         receber esse parametro.
 */
 function nomeUser(nome, sobrenome) { }
+// 6 - validação de propriedades opcionais
+/*
+        as vezes é necessario fazer a validação das propriedades opcionais pois o ts não nos ajuda mais,
+        entao usando um if ja resolve fututos problemas.
+
+*/
+function gritarNome(nome, sobrenome) {
+    if (sobrenome) {
+        return `olá ${nome.toUpperCase()} ${sobrenome === null || sobrenome === void 0 ? void 0 : sobrenome.toUpperCase()}`;
+    }
+    return `olá ${nome.toUpperCase()}`;
+}
