@@ -112,7 +112,7 @@ interface PESSOA {
   cpf?: number | string;
 }
 /*
-parece uma subistituição de tipos do interface mas não, é uma implementação, veja APERTANDO O CTRL + SPACE dentro do objeto a seguir  
+parece uma substituição de tipos do interface mas não, é uma implementação, veja APERTANDO O CTRL + SPACE dentro do objeto a seguir  
 */
 
 const dado: PESSOA = {
@@ -133,3 +133,15 @@ function usoDoIn(pessoa: PESSOA): boolean {
 }
 console.log(usoDoIn(dadoTWO));
 console.log(usoDoIn(dado));
+
+// 10 - funções
+
+//10.1 - void
+
+function showConsole(): void {
+  console.log("...");
+}
+
+/*
+  função void é uma função que nao tem retorno, ou seja, ela faz o que tem que fazer quando é chamada.
+*/

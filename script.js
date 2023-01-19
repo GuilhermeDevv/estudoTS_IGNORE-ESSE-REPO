@@ -1,17 +1,16 @@
-"use strict";
 // 1 - arrays
-const numero = [1, 2, 3];
-const nome = ["Guilherme", "Santos"];
+var numero = [1, 2, 3];
+var nome = ["Guilherme", "Santos"];
 // 1.1 - array new sintaxe
-const arrayNumberNewSintaxe = [1, 2, 3];
-const arrayStringNewSintaxe = ["Guilherme", "santos"];
+var arrayNumberNewSintaxe = [1, 2, 3];
+var arrayStringNewSintaxe = ["Guilherme", "santos"];
 // 2 - any (não usar essa bagaça!!!!!)
 /*
             o any aceita qual quer tipo de valor, se for usar o any pra typescript?????????
             jamais,use,o, any,evite! (respeite as virgulas na leitura, percebera que foi em um tom de raiva!)
             NÃO USE O ANY!!!!!!!!!!!!!!!!!!!!
 */
-const arr = [1, 2, 3, "string aqui"];
+var arr = [1, 2, 3, "string aqui"];
 // 3 - funções
 function soma(a, b) {
     return a + b;
@@ -39,23 +38,23 @@ function nomeUser(nome, sobrenome) { }
 */
 function gritarNome(nome, sobrenome) {
     if (sobrenome) {
-        return `olá ${nome.toUpperCase()} ${sobrenome === null || sobrenome === void 0 ? void 0 : sobrenome.toUpperCase()}`;
+        return "ol\u00E1 ".concat(nome.toUpperCase(), " ").concat(sobrenome === null || sobrenome === void 0 ? void 0 : sobrenome.toUpperCase());
     }
-    return `olá ${nome.toUpperCase()}`;
+    return "ol\u00E1 ".concat(nome.toUpperCase());
 }
 // 7 - Union types
 /*
         serve para defenir multiplos tipos, veja a seguir.
 */
 function formatarDinheiro(valor) {
-    console.log(`seu saldo é de R$ ${valor}`);
+    console.log("seu saldo \u00E9 de R$ ".concat(valor));
 }
 formatarDinheiro(1000);
 formatarDinheiro("3000");
 function monstrarId(id) {
-    return `o seu id é ${id}`;
+    return "o seu id \u00E9 ".concat(id);
 }
-const pessoa = { nome: "GUILHERME", idade: 17 };
+var pessoa = { nome: "GUILHERME", idade: 17 };
 /*
         uma interface é uma forma de garantir que um objeto possui certos atributos e métodos.
         Ela define uma estrutura que um objeto deve seguir, mas não fornece a implementação dos métodos.
@@ -64,16 +63,16 @@ const pessoa = { nome: "GUILHERME", idade: 17 };
 */
 function freeShow(obj) { }
 /*
-parece uma subistituição de tipos do interface mas não, é uma implementação, veja APERTANDO O CTRL + SPACE dentro do objeto a seguir
+parece uma substituição de tipos do interface mas não, é uma implementação, veja APERTANDO O CTRL + SPACE dentro do objeto a seguir
 */
-const dado = {
+var dado = {
     nome: "GL",
-    idade: 17,
+    idade: 17
 };
-const dadoTWO = {
+var dadoTWO = {
     nome: "GL",
     idade: 17,
-    cpf: "123.456.789-10",
+    cpf: "123.456.789-10"
 };
 function usoDoIn(pessoa) {
     if ("cpf" in pessoa) {
@@ -83,3 +82,11 @@ function usoDoIn(pessoa) {
 }
 console.log(usoDoIn(dadoTWO));
 console.log(usoDoIn(dado));
+// 10 - funções
+//10.1 - void
+function showConsole() {
+    console.log("...");
+}
+/*
+  função void é uma função que nao tem retorno, ou seja, ela faz o que tem que fazer quando é chamada.
+*/
