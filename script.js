@@ -128,3 +128,16 @@ function arrays(arr1, arr2) {
     return arr1.concat(arr2);
 }
 console.log(arrays([1], [3, "3"]));
+function desetruturando(_a) {
+    var name = _a.name, idade = _a.idade;
+    return "Ol\u00E1 ".concat(name, ", voce tem ").concat(idade);
+}
+console.log(desetruturando({ name: "gl", idade: 17 }));
+function showProduct(produto) {
+    return "O produto ".concat(produto.nome, " custa R$ ").concat(produto.preco);
+}
+showProduct({ nome: "gl", preco: 18.11 });
+/* OU */
+function showProductTwo(produto) {
+    return "O produto ".concat(produto.nome, " custa R$ ").concat(produto.preco);
+}

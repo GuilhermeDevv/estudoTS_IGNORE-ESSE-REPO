@@ -187,3 +187,32 @@ function arrays<T>(arr1: T[], arr2: T[]): T[] {
   return arr1.concat(arr2);
 }
 console.log(arrays<string | number>([1], [3, "3"]));
+
+// 11 - desetruturando objetos como paramtros
+
+interface DADOS {
+  name: string;
+  idade: number;
+}
+function desetruturando({ name, idade }: DADOS): string {
+  return `Olá ${name}, voce tem ${idade}`;
+}
+
+console.log(desetruturando({ name: "gl", idade: 17 }));
+
+// 12 - object types
+
+interface PRODUTO {
+  nome: string;
+  preco: number;
+}
+
+function showProduct<T extends PRODUTO>(produto: T): string {
+  return `O produto ${produto.nome} custa R$ ${produto.preco}`;
+}
+showProduct({ nome: "gl", preco: 18.11 });
+/* OU */
+
+function showProductTwo(produto: PRODUTO): string {
+  return `O produto ${produto.nome} custa R$ ${produto.preco}`;
+}
