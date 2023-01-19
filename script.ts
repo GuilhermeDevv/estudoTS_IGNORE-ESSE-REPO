@@ -182,3 +182,8 @@ function unirObjetos<T, U>(obj1: T, obj: U): T & U {
   };
 }
 console.log(unirObjetos({}, {}));
+
+function arrays<T>(arr1: T[], arr2: T[]): T[] {
+  return arr1.concat(arr2);
+}
+console.log(arrays<string | number>([1], [3, "3"]));

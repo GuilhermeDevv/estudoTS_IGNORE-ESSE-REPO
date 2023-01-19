@@ -124,3 +124,7 @@ function unirObjetos(obj1, obj) {
     return __assign(__assign({}, obj1), obj);
 }
 console.log(unirObjetos({}, {}));
+function arrays(arr1, arr2) {
+    return arr1.concat(arr2);
+}
+console.log(arrays([1], [3, "3"]));
