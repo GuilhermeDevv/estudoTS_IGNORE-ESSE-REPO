@@ -154,5 +154,31 @@ function saudacao(name: string): void {
 function preSaudacao(saudar: (saud: string) => void, nome: string): void {
   saudar(nome);
 }
-
 preSaudacao(saudacao, "Guilherme");
+
+//10.2 - generic functions
+
+function exibirFistElement<T>(arr: T[]): T {
+  return arr[0];
+}
+console.log(exibirFistElement(["Guilherme", "correa", "santos"]));
+console.log(exibirFistElement([1, 2, 3]));
+console.log(exibirFistElement(["1", 2, 3]));
+
+interface Pessoa {
+  nome: string;
+  idade: number;
+}
+
+function exibirFistElementObject<T extends Pessoa>(obj: T): string {
+  return `Olá ${obj.nome}`;
+}
+console.log(exibirFistElementObject({ nome: "Guilherme", idade: 18 }));
+
+function unirObjetos<T, U>(obj1: T, obj: U): T & U {
+  return {
+    ...obj1,
+    ...obj,
+  };
+}
+console.log(unirObjetos({}, {}));
