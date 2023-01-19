@@ -145,3 +145,14 @@ function showConsole(): void {
 /*
   função void é uma função que nao tem retorno, ou seja, ela faz o que tem que fazer quando é chamada.
 */
+
+//10.2 - callback
+function saudacao(name: string): void {
+  console.log(`olá ${name}`);
+}
+
+function preSaudacao(saudar: (saud: string) => void, nome: string): void {
+  saudar(nome);
+}
+
+preSaudacao(saudacao, "Guilherme");

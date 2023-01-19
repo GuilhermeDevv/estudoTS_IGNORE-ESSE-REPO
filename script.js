@@ -90,3 +90,11 @@ function showConsole() {
 /*
   função void é uma função que nao tem retorno, ou seja, ela faz o que tem que fazer quando é chamada.
 */
+//10.2 - callback
+function saudacao(name) {
+    console.log("ol\u00E1 ".concat(name));
+}
+function preSaudacao(saudar, nome) {
+    saudar(nome);
+}
+preSaudacao(saudacao, "Guilherme");
