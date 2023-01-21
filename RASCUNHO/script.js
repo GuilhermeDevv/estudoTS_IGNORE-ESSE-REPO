@@ -16,3 +16,11 @@ function ordenar(arr) {
     return arr.sort((a, b) => a - b);
 }
 console.log(ordenar(arrayNumber));
+class carro {
+    constructor(marca, ano, modelo) {
+        this.marca = marca;
+        this.ano = ano;
+        this.modelo = modelo;
+    }
+}
+const carrinho = new carro("GOL", 2018, "BOLINHA");

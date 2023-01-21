@@ -22,3 +22,21 @@ function ordenar(arr: number[]): number[] {
 }
 
 console.log(ordenar(arrayNumber));
+
+interface VEICULO {
+  marca: string;
+  ano: number;
+}
+
+class carro implements VEICULO {
+  marca: string;
+  ano: number;
+  modelo: string;
+  constructor(marca: string, ano: number, modelo: string) {
+    this.marca = marca;
+    this.ano = ano;
+    this.modelo = modelo;
+  }
+}
+
+const carrinho = new carro("GOL", 2018, "BOLINHA");
