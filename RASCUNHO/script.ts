@@ -40,3 +40,17 @@ class carro implements VEICULO {
 }
 
 const carrinho = new carro("GOL", 2018, "BOLINHA");
+
+function echo<T extends number | string>(
+  number1: T,
+  number2: T
+): number | string {
+  if (typeof number1 == "number" && typeof number2 == "number") {
+    return (number1 - number2) as number;
+  } else if (typeof number1 == "string" && typeof number2 === "string") {
+    return `${+number1 - +number2}`;
+  }
+  return `ISSO NÃO É VALIDO`;
+}
+
+console.log(echo("5", "3"));
