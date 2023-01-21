@@ -16,7 +16,7 @@ const arr: Array<any> = [1, 2, 3, "string aqui"];
 
 // 3 - funções
 
-function soma(a: number, b: number) {
+function somaa(a: number, b: number) {
   return a + b;
 }
 
@@ -85,7 +85,7 @@ interface TIPO_PESSOA {
   sobrenome?: string;
   idade: number | string;
 }
-const pessoa: TIPO_PESSOA = { nome: "GUILHERME", idade: 17 };
+const pessoas: TIPO_PESSOA = { nome: "GUILHERME", idade: 17 };
 
 /*
         uma interface é uma forma de garantir que um objeto possui certos atributos e métodos. 
@@ -216,3 +216,19 @@ showProduct({ nome: "gl", preco: 18.11 });
 function showProductTwo(produto: PRODUTO): string {
   return `O produto ${produto.nome} custa R$ ${produto.preco}`;
 }
+
+// 13 - index signature
+
+interface data {
+  [index: string]: string;
+}
+
+const teste: data = {
+  teste: "teste",
+};
+
+/*
+
+o uso serve para criar campo onde pode ser qualquer nome
+ 
+*/
