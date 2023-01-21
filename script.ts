@@ -213,8 +213,8 @@ function showProduct<T extends PRODUTO>(produto: T): string {
 showProduct({ nome: "gl", preco: 18.11 });
 /* OU */
 
-function showProductTwo(produto: PRODUTO): string {
-  return `O produto ${produto.nome} custa R$ ${produto.preco}`;
+function showProductTwo({ nome, preco }: PRODUTO): string {
+  return `O produto ${nome} custa R$ ${preco}`;
 }
 
 // 13 - index signature

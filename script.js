@@ -126,8 +126,8 @@ function showProduct(produto) {
 }
 showProduct({ nome: "gl", preco: 18.11 });
 /* OU */
-function showProductTwo(produto) {
-    return `O produto ${produto.nome} custa R$ ${produto.preco}`;
+function showProductTwo({ nome, preco }) {
+    return `O produto ${nome} custa R$ ${preco}`;
 }
 const teste = {
     teste: "teste",
