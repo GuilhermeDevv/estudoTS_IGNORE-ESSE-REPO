@@ -11,3 +11,8 @@ class pessoa {
     }
 }
 const pessoa1 = new pessoa("Guilherme", 17);
+const arrayNumber = [10, 12, 5, 77, 18, 88, 4, 5, 2, 1];
+function ordenar(arr) {
+    return arr.sort((a, b) => a - b);
+}
+console.log(ordenar(arrayNumber));
