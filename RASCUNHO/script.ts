@@ -65,3 +65,14 @@ function subtracao22<T extends number>(a: T, b: T): string {
 
   return `a diferenca de ${a} - ${b} é de : ${result}`;
 }
+
+function mostrarTamanho<T extends string>(texto: T): number {
+  const result = texto.length;
+
+  return result;
+}
+
+function somaGeral<T extends number[]>(arr: T): number {
+  const result: number = arr.reduce((acc, current) => acc + current, 0);
+  return result;
+}

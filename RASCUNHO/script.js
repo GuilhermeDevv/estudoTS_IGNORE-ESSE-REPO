@@ -42,3 +42,11 @@ function subtracao22(a, b) {
     const result = a - b;
     return `a diferenca de ${a} - ${b} é de : ${result}`;
 }
+function mostrarTamanho(texto) {
+    const result = texto.length;
+    return result;
+}
+function somaGeral(arr) {
+    const result = arr.reduce((acc, current) => acc + current, 0);
+    return result;
+}
