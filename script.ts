@@ -313,5 +313,24 @@ caso eu tente colocar três string o ts detecta erro, pois 'showTupla' espera re
 
 */
 
-
 // const dados17: showTupla = ["teste", "teste", '1'];
+
+// 17 - Tupla readOnly
+
+/*
+
+Tupla ReadOnly 
+
+*/
+
+type tuplaReadOnly = readonly [number, Number];
+
+function showNumber(numbers: tuplaReadOnly): void {
+  //numbers[0] = 10; << caso tente alterar o valor de algum elemento o ts dara erro, não é possivel alterar um elemento readonly
+
+  numbers.forEach((i) => {
+    console.log(i);
+  });
+}
+
+showNumber([1, 2]);
