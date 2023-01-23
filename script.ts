@@ -257,3 +257,29 @@ class car implements CAR {
 
 const newCar = new car("vw", 4);
 //newCar.rodas = 3;  << esse código da erro, pois a chave 'RODAS' é do tipo ReadOnly, ou seja, 'RODAS' é apenas para leitura após o seu valor ser setado.
+
+// 15 - Intersection Types
+
+/*
+
+O uso do Intersection Types é ultilizado para criar tipos mais complexos a partir de duas interfaces, aceita o uso de concatenação com o "&".
+
+*/
+
+interface NOME {
+  nome: string;
+}
+interface DATA_PESSOA {
+  idade: number;
+  cpf: string;
+  genero: "M" | "F";
+}
+//VEJA  A JUNÇÃO A SEGUIR COM O "&"
+type ALL_PESSOA = NOME & DATA_PESSOA;
+
+const dados15: ALL_PESSOA = {
+  nome: "GUILHERME",
+  idade: 17,
+  cpf: "000.000.000-00",
+  genero: "M",
+};

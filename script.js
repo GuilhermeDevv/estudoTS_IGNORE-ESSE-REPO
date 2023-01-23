@@ -139,4 +139,9 @@ class car {
     }
 }
 const newCar = new car("vw", 4);
-//newCar.rodas = 3;  << esse código da erro, pois a chave 'RODAS' é do tipo ReadOnly, ou seja, 'RODAS' é apenas para leitura após o seu valor ser setado.
+const dados15 = {
+    nome: "GUILHERME",
+    idade: 17,
+    cpf: "000.000.000-00",
+    genero: "M",
+};
