@@ -38,3 +38,7 @@ function soma22(a, b) {
     const result = a + b;
     return `o valor da soma de ${a} + ${b} é : ${result}`;
 }
+function subtracao22(a, b) {
+    const result = a - b;
+    return `a diferenca de ${a} - ${b} é de : ${result}`;
+}

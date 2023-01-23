@@ -60,4 +60,8 @@ function soma22<T extends number>(a: T, b: T): string {
   return `o valor da soma de ${a} + ${b} é : ${result}`;
 }
 
+function subtracao22<T extends number>(a: T, b: T): string {
+  const result: number = a - b;
 
+  return `a diferenca de ${a} - ${b} é de : ${result}`;
+}
