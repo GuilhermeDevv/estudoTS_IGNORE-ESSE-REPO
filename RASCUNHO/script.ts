@@ -53,4 +53,11 @@ function echo<T extends number | string>(
   return `ISSO NÃO É VALIDO`;
 }
 
-console.log(echo("5", "3"));
+//22
+
+function soma22<T extends number>(a: T, b: T): string {
+  const result: number = a + b;
+  return `o valor da soma de ${a} + ${b} é : ${result}`;
+}
+
+

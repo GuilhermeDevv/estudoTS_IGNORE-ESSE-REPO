@@ -33,4 +33,8 @@ function echo(number1, number2) {
     }
     return `ISSO NÃO É VALIDO`;
 }
-console.log(echo("5", "3"));
+//22
+function soma22(a, b) {
+    const result = a + b;
+    return `o valor da soma de ${a} + ${b} é : ${result}`;
+}
