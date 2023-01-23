@@ -145,3 +145,11 @@ const dados15 = {
     cpf: "000.000.000-00",
     genero: "M",
 };
+// 14 - ReadOnly
+/*
+
+O uso do ReadonlyArray:
+
+*/
+const arrayFrutas = ["maça", "banana", "uva"];
+const twoType = ["maça", 1];

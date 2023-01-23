@@ -283,3 +283,15 @@ const dados15: ALL_PESSOA = {
   cpf: "000.000.000-00",
   genero: "M",
 };
+
+// 14 - ReadOnly
+
+/*
+
+O uso do ReadonlyArray:
+
+*/
+
+const arrayFrutas: ReadonlyArray<string> = ["maça", "banana", "uva"];
+const twoType: ReadonlyArray<string | number> = ["maça", 1];
+
