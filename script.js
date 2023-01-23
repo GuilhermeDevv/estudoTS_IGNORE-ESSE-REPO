@@ -161,3 +161,5 @@ function showNumber(numbers) {
     });
 }
 showNumber([1, 2]);
+const carrin = { nome: "VW", rodas: 4, engine: 1.0 };
+const caneta = { cor: "VERDE", nome: "bic", tamanho: "2M" };

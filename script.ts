@@ -325,7 +325,7 @@ Tupla ReadOnly
 
 type tuplaReadOnly = readonly [number, Number];
 
-function showNumber(numbers: tuplaReadOnly): void {
+function showNumber(numbers: tuplaReadOnly) {
   //numbers[0] = 10; << caso tente alterar o valor de algum elemento o ts dara erro, não é possivel alterar um elemento readonly
 
   numbers.forEach((i) => {
@@ -334,3 +334,25 @@ function showNumber(numbers: tuplaReadOnly): void {
 }
 
 showNumber([1, 2]);
+
+// 18 - aprofundando generics
+
+interface myObject<T, U> {
+  nome: string;
+  rodas: T;
+  engine: U;
+}
+
+type car18 = myObject<number, number>;
+
+const carrin: car18 = { nome: "VW", rodas: 4, engine: 1.0 };
+
+interface canetaObject<T> {
+  nome: string;
+  cor: T;
+  tamanho: T;
+}
+type CANETA = canetaObject<string>;
+const caneta: CANETA = { cor: "VERDE", nome: "bic", tamanho: "2M" };
+
+
