@@ -132,8 +132,11 @@ function showProductTwo({ nome, preco }) {
 const teste = {
     teste: "teste",
 };
-/*
-
-o uso serve para criar campo onde pode ser qualquer nome
- 
-*/
+class car {
+    constructor(marca, rodas = 4) {
+        this.marca = marca;
+        this.rodas = rodas;
+    }
+}
+const newCar = new car("vw", 4);
+//newCar.rodas = 3;  << esse código da erro, pois a chave 'RODAS' é do tipo ReadOnly, ou seja, 'RODAS' é apenas para leitura após o seu valor ser setado.

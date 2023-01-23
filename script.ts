@@ -232,3 +232,28 @@ const teste: data = {
 o uso serve para criar campo onde pode ser qualquer nome
  
 */
+
+// 14 - ReadOnly
+
+/*
+
+O uso do ReadOnly é parecido com o uso do CONST do javascript, não é possível alterar o valor pois é apenas para leitura após a inserção do valor.
+
+*/
+
+interface CAR {
+  marca: string;
+  readonly rodas?: number;
+}
+
+class car implements CAR {
+  marca: string;
+  readonly rodas: number;
+  constructor(marca: string, rodas: number = 4) {
+    this.marca = marca;
+    this.rodas = rodas;
+  }
+}
+
+const newCar = new car("vw", 4);
+//newCar.rodas = 3;  << esse código da erro, pois a chave 'RODAS' é do tipo ReadOnly, ou seja, 'RODAS' é apenas para leitura após o seu valor ser setado.
