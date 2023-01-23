@@ -145,7 +145,7 @@ const dados15 = {
     cpf: "000.000.000-00",
     genero: "M",
 };
-// 14 - ReadOnly
+// 16 - ReadOnly
 /*
 
 O uso do ReadonlyArray:
@@ -153,3 +153,10 @@ O uso do ReadonlyArray:
 */
 const arrayFrutas = ["maça", "banana", "uva"];
 const twoType = ["maça", 1];
+const dados17 = ["teste", "teste", 1];
+/*
+
+caso eu tente colocar três string o ts detecta erro, pois 'showTupla' espera receber: string, string e number
+
+*/
+// const dados17: showTupla = ["teste", "teste", '1'];

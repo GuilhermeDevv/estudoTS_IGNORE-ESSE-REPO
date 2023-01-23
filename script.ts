@@ -284,7 +284,7 @@ const dados15: ALL_PESSOA = {
   genero: "M",
 };
 
-// 14 - ReadOnly
+// 16 - ReadOnly
 
 /*
 
@@ -295,3 +295,23 @@ O uso do ReadonlyArray:
 const arrayFrutas: ReadonlyArray<string> = ["maça", "banana", "uva"];
 const twoType: ReadonlyArray<string | number> = ["maça", 1];
 
+// 17 - Tupla
+
+/*
+
+A tupla serve para criar um ARRAY, e definir que tipo de dado cada posição recebe, veja:
+
+*/
+
+type showTupla = [string, string, number];
+
+const dados17: showTupla = ["teste", "teste", 1];
+
+/*
+
+caso eu tente colocar três string o ts detecta erro, pois 'showTupla' espera receber: string, string e number
+
+*/
+
+
+// const dados17: showTupla = ["teste", "teste", '1'];
