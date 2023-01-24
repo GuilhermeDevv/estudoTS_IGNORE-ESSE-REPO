@@ -168,3 +168,7 @@ function showServer(server, value) {
     console.log(`o pc tem tem ${server[value]} ${String(value)}`);
 }
 showServer({ nome: "PC GAMER", ram: "32gb" }, "ram");
+function char(obj, name) {
+    console.log(obj[name]);
+}
+char({ nome: "buru", idade: 17, genero: "M" }, "nome");

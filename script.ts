@@ -365,3 +365,15 @@ function showServer<T extends { nome: string }, K extends keyof T>(
 }
 
 showServer({ nome: "PC GAMER", ram: "32gb" }, "ram");
+
+// 20 - keyof operator
+
+type person = { nome: string; idade: number; genero: "F" | "M" };
+
+type C = keyof person;
+
+function char(obj: person, name: C) {
+  console.log(obj[name]);
+}
+
+char({ nome: "buru", idade: 17, genero: "M" }, "nome");
