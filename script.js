@@ -168,7 +168,11 @@ function showServer(server, value) {
     console.log(`o pc tem tem ${server[value]} ${String(value)}`);
 }
 showServer({ nome: "PC GAMER", ram: "32gb" }, "ram");
-function char(obj, name) {
-    console.log(obj[name]);
+function char(obj, key) {
+    console.log(obj[key]);
 }
 char({ nome: "buru", idade: 17, genero: "M" }, "nome");
+// 21 - typeof type operator
+const nome1 = "Guilherme";
+// caso tente passar um valor com o type diferente do 'nome1' dara um erro no ts.
+const nome2 = "";

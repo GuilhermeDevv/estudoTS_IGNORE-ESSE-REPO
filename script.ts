@@ -372,8 +372,14 @@ type person = { nome: string; idade: number; genero: "F" | "M" };
 
 type C = keyof person;
 
-function char(obj: person, name: C) {
-  console.log(obj[name]);
+function char(obj: person, key: C) {
+  console.log(obj[key]);
 }
 
 char({ nome: "buru", idade: 17, genero: "M" }, "nome");
+
+// 21 - typeof type operator
+
+const nome1: string = "Guilherme";
+// caso tente passar um valor com o type diferente do 'nome1' dara um erro no ts.
+const nome2: typeof nome1 = "";
