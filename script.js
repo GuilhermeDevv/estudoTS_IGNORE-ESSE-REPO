@@ -163,3 +163,8 @@ function showNumber(numbers) {
 showNumber([1, 2]);
 const carrin = { nome: "VW", rodas: 4, engine: 1.0 };
 const caneta = { cor: "VERDE", nome: "bic", tamanho: "2M" };
+// 19 - key params
+function showServer(server, value) {
+    console.log(`o pc tem tem ${server[value]} ${String(value)}`);
+}
+showServer({ nome: "PC GAMER", ram: "32gb" }, "ram");

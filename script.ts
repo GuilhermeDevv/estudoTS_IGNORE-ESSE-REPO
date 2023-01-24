@@ -355,4 +355,13 @@ interface canetaObject<T> {
 type CANETA = canetaObject<string>;
 const caneta: CANETA = { cor: "VERDE", nome: "bic", tamanho: "2M" };
 
+// 19 - key params
 
+function showServer<T extends { nome: string }, K extends keyof T>(
+  server: T,
+  value: K
+) {
+  console.log(`o pc tem tem ${server[value]} ${String(value)}`);
+}
+
+showServer({ nome: "PC GAMER", ram: "32gb" }, "ram");
