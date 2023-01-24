@@ -262,7 +262,7 @@ const newCar = new car("vw", 4);
 
 /*
 
-O uso do Intersection Types é ultilizado para criar tipos mais complexos a partir de duas interfaces, aceita o uso de concatenação com o "&".
+O uso do Intersection Types é utilizado para criar tipos mais complexos a partir de duas interfaces, aceita o uso de concatenação com o "&".
 
 */
 
@@ -326,7 +326,7 @@ Tupla ReadOnly
 type tuplaReadOnly = readonly [number, Number];
 
 function showNumber(numbers: tuplaReadOnly) {
-  //numbers[0] = 10; << caso tente alterar o valor de algum elemento o ts dara erro, não é possivel alterar um elemento readonly
+  //numbers[0] = 10; << caso tente alterar o valor de algum elemento o ts dará erro, não é possivel alterar um elemento readonly
 
   numbers.forEach((i) => {
     console.log(i);
@@ -335,7 +335,7 @@ function showNumber(numbers: tuplaReadOnly) {
 
 showNumber([1, 2]);
 
-// 18 - aprofundando generics
+// 18 - aprofundando generic
 
 interface myObject<T, U> {
   nome: string;
@@ -381,5 +381,5 @@ char({ nome: "buru", idade: 17, genero: "M" }, "nome");
 // 21 - typeof type operator
 
 const nome1: string = "Guilherme";
-// caso tente passar um valor com o type diferente do 'nome1' dara um erro no ts.
+// caso tente passar um valor com o type diferente do 'nome1' dará um erro no ts.
 const nome2: typeof nome1 = "";

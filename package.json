@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "eslint": "^8.32.0"
+  },
+  "dependencies": {
+    "tsc": "^2.0.4"
+  }
+}
