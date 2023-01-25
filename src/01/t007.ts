@@ -1,4 +1,6 @@
 //null & undefined
+/*eslint-disable */
+
 let x;
 if (typeof x === 'undefined') x = 10;
 console.log(x * 2);
