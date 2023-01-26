@@ -1,6 +1,6 @@
 //funções como tipo
 type FunctionString = (item: string) => string;
-function mapSting(array: string[], callbackfn: FunctionString): string[] {
+function mapString(array: string[], callbackfn: FunctionString): string[] {
   const newArray = [];
   for (let index = 0; index < array.length; index++) {
     newArray.push(callbackfn(array[index]));
@@ -10,6 +10,6 @@ function mapSting(array: string[], callbackfn: FunctionString): string[] {
 
 const abc = ['a', 'b', 'c'];
 
-const resultArr = mapSting(abc, (item) => item.toUpperCase());
+const resultArr = mapString(abc, (item) => item.toUpperCase());
 
 console.log(resultArr);
