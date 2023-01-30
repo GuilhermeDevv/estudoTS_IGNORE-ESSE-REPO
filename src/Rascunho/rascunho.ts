@@ -23,3 +23,12 @@ function testeRasc(x: string[] | string) {
 }
 
 testeRasc(arrString);
+const pessoa = {
+  nome: undefined,
+};
+
+let teste: string | null;
+
+teste = pessoa.nome ?? 'guest';
+
+console.log(teste);
