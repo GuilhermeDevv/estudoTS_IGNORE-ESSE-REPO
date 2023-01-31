@@ -39,3 +39,13 @@ function retornaMaior<T = number>(a: T, b: T): string {
 }
 
 console.log(retornaMaior(12, 16));
+type ObjTeste<T = number, U = string> = {
+  nome: U;
+  sobrenome: U;
+  idade: T;
+};
+
+function retornarPropDeObjeto(obj: ObjTeste) {
+  console.log(obj);
+}
+retornarPropDeObjeto({ nome: 'gui', idade: 17, sobrenome: 'Correa' });
