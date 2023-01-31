@@ -23,12 +23,19 @@ function testeRasc(x: string[] | string) {
 }
 
 testeRasc(arrString);
-const pessoa = {
+export const pessoa = {
   nome: undefined,
 };
 
 let teste: string | null;
 
-teste = pessoa.nome ?? 'guest';
+teste = pessoa.nome ?? 'guest'; // eslint-disable-line
 
 console.log(teste);
+
+function retornaMaior<T = number>(a: T, b: T): string {
+  if (a > b) return `o ${a} é maior que o ${b}`;
+  return `o ${b} é maior que o ${a}`;
+}
+
+console.log(retornaMaior(12, 16));
