@@ -49,3 +49,14 @@ function retornarPropDeObjeto(obj: ObjTeste) {
   console.log(obj);
 }
 retornarPropDeObjeto({ nome: 'gui', idade: 17, sobrenome: 'Correa' });
+
+interface CreateProp<T, U> {
+  [key: string]: T | U;
+}
+
+export const testando: CreateProp<string, number> = {
+  nome: 'Teste',
+  idade: 17,
+};
+
+console.log(testando);
